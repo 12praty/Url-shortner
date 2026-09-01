@@ -7,5 +7,6 @@ int main(){
 
      string code2 = shortener.shorten("https://github.com");
      cout << code1 << " -> " << shortener.resolve(code1) << endl;
+
      cout << code2 << " -> " << shortener.resolve(code2) << endl;
 }
