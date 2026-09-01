@@ -9,7 +9,11 @@ class UrlShortener{
         unordered_map<string, string>url;
         int counter =1;
         string base62Encoding(int num);
+        string filename="urls.txt";
+        void save();
+        void load();
     public:
+        UrlShortener();
         string shorten(const string& longUrl);//Takes a long URL and returns a short code.
         string resolve(const string& code );//Takes a short code and returns the original long URL.
 };
