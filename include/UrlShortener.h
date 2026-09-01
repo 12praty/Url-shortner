@@ -8,6 +8,7 @@ class UrlShortener{
     private:
         unordered_map<string, string>url;
         int counter =1;
+        string base62Encoding(int num);
     public:
         string shorten(const string& longUrl);//Takes a long URL and returns a short code.
         string resolve(const string& code );//Takes a short code and returns the original long URL.
